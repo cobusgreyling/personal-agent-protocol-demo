@@ -1,19 +1,17 @@
-# See Poppy
+# Personal Agent Protocol
 
-A personal agent and a shop, on your laptop, talking [Personal Agent Protocol](https://personalagentprotocol.org) draft 0.1.
-
-Pip asks Cedar Line to exchange a jacket. You approve access on Cedar Line's own page. The panel on the right is what the shop can see. The log under it is the real HTTP from this process. Account tokens are redacted.
-
-Python 3.11 or newer. One dependency, for ES256 signatures.
+Run a [Personal Agent Protocol](https://personalagentprotocol.org) visit on your laptop. Draft 0.1, Poppy for short. Python 3.11 or newer. One dependency, for ES256 signatures.
 
 ```bash
 python3 -m pip install -r requirements.txt
 python3 demo.py
 ```
 
+Personal Agent Protocol is how a personal agent finds a company, signs a person in, and gets something done through that company's API, website, or agent. Pip asks Cedar Line to exchange a jacket. You approve access on Cedar Line's own page. The panel on the right is what the shop can see. The log under it is the real HTTP from this process. Account tokens are redacted.
+
 The browser opens Pip. Click **Ask Pip**, then **Continue on Cedar Line's page**.
 
-![Pip has asked Cedar Line. The shop still only has a guest session.](assets/visit.png)
+![A Personal Agent Protocol visit. Pip has asked Cedar Line, which still only has a guest session.](assets/visit.png)
 
 On Cedar Line's page, choose one:
 
